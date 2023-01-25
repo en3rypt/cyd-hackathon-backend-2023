@@ -30,7 +30,7 @@ export class AppController {
     return data;
   }
 
-  @Post('/create/:name')
+  @Post('/createWatchlist/:name')
   async createWatchlist(@Param('name') name: string) {
     let regex = /^[a-zA-Z0-9]*$/;
     if (name.length >= 5 && name.length <= 20 && name.match(regex)) {
