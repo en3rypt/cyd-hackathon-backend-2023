@@ -27,8 +27,11 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@coingecko/cryptoformat": "^0.5.4",
+    "@nestjs/axios": "^1.0.1",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^9.0.0",
     "db-local": "^2.9.0",
     "reflect-metadata": "^0.1.13",

@@ -21,7 +21,8 @@ export class DbService {
 
   async find(key: string) {
     const reqWList = this.WatchLists.find((obj: any) => {
-      obj.name === key;
+      console.log(obj.name == key);
+      obj.name == key;
     });
     return reqWList;
   }
